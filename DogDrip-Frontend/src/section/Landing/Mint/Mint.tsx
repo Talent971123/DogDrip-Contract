@@ -120,6 +120,13 @@ const Mint: React.FC = () => {
             setLoading(false);
           })
           .catch((error: any) => {
+            if (error.data.code === -32000) {
+              toast.error("You don't have enough Matic.", {
+                position: "top-right",
+                theme: "dark",
+                hideProgressBar: true,
+              });
+            }
             setLoading(false);
           });
       }

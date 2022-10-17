@@ -13,7 +13,7 @@ export const WalletConnect = new WalletConnectConnector({
     1: "https://eth-mainnet.g.alchemy.com/v2/-ajv5spWDkHtKGMnGBrX9FBQSJyeOq-X",
     4: "https://eth-rinkeby.alchemyapi.io/v2/GwOWj5s-v_OUsjrL22kme2rFCSafFvlH",
     80001:
-      "https://polygon-mumbai.g.alchemy.com/v2/ogDLGqiq5fRwo03sXx0Pt4kGHrdXbRH6",
+      "https://polygon-mumbai.g.alchemy.com/v2/7trXGQ7EU7tcjVVJ8TibNIoYIpHaSXF7",
     137: "https://polygon-mainnet.g.alchemy.com/v2/9MUdsz3oD99RBbX8tXNdNNIZfOUnn-5d",
   },
   qrcode: true,
