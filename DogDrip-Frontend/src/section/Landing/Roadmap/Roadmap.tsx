@@ -23,13 +23,13 @@ const Roadmap: React.FC = () => {
   const [time, setTime] = useState(0);
 
   useEffect(() => {
-    let launchTime = new Date("Oct 2, 2022 00:00:00").getTime();
+    let launchTime = new Date("Dec 18, 2022 00:00:00").getTime();
     let now = new Date().getTime();
     setTime(launchTime - now);
   }, []);
 
   useEffect(() => {
-    let launchTime = new Date("Oct 2, 2022 00:00:00").getTime();
+    let launchTime = new Date("Dec 18, 2022 00:00:00").getTime();
     let now = new Date().getTime();
     setTimeout(() => {
       setTime(launchTime - now);

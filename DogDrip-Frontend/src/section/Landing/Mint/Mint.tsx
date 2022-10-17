@@ -68,7 +68,7 @@ const Mint: React.FC = () => {
   useEffect(() => {
     (async () => {
       const web3 = createAlchemyWeb3(
-        "https://polygon-mumbai.g.alchemy.com/v2/In2uAgR_E4NnfJS3nJuxfs2ZS2JjEjUa"
+        "https://polygon-mainnet.g.alchemy.com/v2/9MUdsz3oD99RBbX8tXNdNNIZfOUnn-5d"
       );
       const contract = new web3.eth.Contract(contract_abi, contract_address);
       // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -109,7 +109,7 @@ const Mint: React.FC = () => {
 
         await contract
           .mint(number, {
-            value: ethers.utils.parseEther((0.01 * number).toString()),
+            value: ethers.utils.parseEther((125 * number).toString()),
           })
           .then(() => {
             toast.success("success", {
@@ -142,7 +142,7 @@ const Mint: React.FC = () => {
           <Title data-aos="fade-up">Mint Dogdrip</Title>
           <Total data-aos="fade-up">
             Total Minted:
-            <Number>{supply}/10000</Number>
+            <Number>{supply}/5000</Number>
           </Total>
           <Text data-aos="fade-up">125 MATIC + Gas fee</Text>
           <Text data-aos="fade-up">5 Dog Drip mint per wallet</Text>

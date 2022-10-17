@@ -14,7 +14,7 @@ export const WalletConnect = new WalletConnectConnector({
     4: "https://eth-rinkeby.alchemyapi.io/v2/GwOWj5s-v_OUsjrL22kme2rFCSafFvlH",
     80001:
       "https://polygon-mumbai.g.alchemy.com/v2/ogDLGqiq5fRwo03sXx0Pt4kGHrdXbRH6",
-    137: "https://polygon-mumbai.g.alchemy.com/v2/In2uAgR_E4NnfJS3nJuxfs2ZS2JjEjUa",
+    137: "https://polygon-mainnet.g.alchemy.com/v2/9MUdsz3oD99RBbX8tXNdNNIZfOUnn-5d",
   },
   qrcode: true,
   bridge: "https://bridge.walletconnect.org",

@@ -25,11 +25,11 @@ const Header: React.FC = () => {
   useEffect(() => {
     (async () => {
       if (account && window.ethereum) {
-        if (chainId !== 80001) {
+        if (chainId !== 137) {
           try {
             await library.provider.request({
               method: "wallet_switchEthereumChain",
-              params: [{ chainId: "0x" + (80001).toString(16) }],
+              params: [{ chainId: "0x" + (137).toString(16) }],
             });
           } catch (switchError) {
             console.log("Switch Error", switchError);
@@ -38,9 +38,9 @@ const Header: React.FC = () => {
                 method: "wallet_addEthereumChain",
                 params: [
                   {
-                    chainId: "0x" + (80001).toString(16),
-                    chainName: "Mumbai Testnet",
-                    rpcUrls: ["https://rpc-mumbai.maticvigil.com"],
+                    chainId: "0x" + (137).toString(16),
+                    chainName: "Polygon Mainnet",
+                    rpcUrls: ["https://polygon-rpc.com"],
                     nativeCurrency: {
                       name: "MATIC",
                       symbol: "MATIC",
