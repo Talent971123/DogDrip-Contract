@@ -144,7 +144,7 @@ const Mint: React.FC = () => {
             Total Minted:
             <Number>{supply}/10000</Number>
           </Total>
-          <Text data-aos="fade-up">120.7 MATIC + Gas fee</Text>
+          <Text data-aos="fade-up">125 MATIC + Gas fee</Text>
           <Text data-aos="fade-up">5 Dog Drip mint per wallet</Text>
           {account && (
             <Text data-aos="fade-up">You already mint {5 - mintable} NFT</Text>
